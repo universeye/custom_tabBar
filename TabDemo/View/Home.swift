@@ -11,11 +11,11 @@ struct Home: View {
     @State private var activeTab: String = "FirstPage"
     
     private var tabItems: [CustomTabBarItem] = [
-        CustomTabBarItem(id: "FirstPage", view: AnyView(ResearchView())),
-        CustomTabBarItem(id: "SecondPage", view: AnyView(DeploymentView())),
-        CustomTabBarItem(id: "ThirdPage", view: AnyView(AnalyticsView())),
-        CustomTabBarItem(id: "ForthPage", view: AnyView(AudienceView())),
-        CustomTabBarItem(id: "FifthPage", view: AnyView(PrivacyView()))
+        CustomTabBarItem(id: "FirstPage", view: AnyView(FirstView())),
+        CustomTabBarItem(id: "SecondPage", view: AnyView(SecondView())),
+        CustomTabBarItem(id: "ThirdPage", view: AnyView(ThirdView())),
+        CustomTabBarItem(id: "ForthPage", view: AnyView(ForthView())),
+        CustomTabBarItem(id: "FifthPage", view: AnyView(FifthView()))
     ]
     
     var body: some View {
@@ -30,35 +30,35 @@ struct Home: View {
     }
 }
 
-struct ResearchView: View {
+struct FirstView: View {
     var body: some View {
         Text("First View")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
-struct DeploymentView: View {
+struct SecondView: View {
     var body: some View {
         Text("Second View")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
-struct AnalyticsView: View {
+struct ThirdView: View {
     var body: some View {
         Text("Third View")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
-struct AudienceView: View {
+struct ForthView: View {
     var body: some View {
         Text("Forth View")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
-struct PrivacyView: View {
+struct FifthView: View {
     var body: some View {
         Text("Fifth View")
             .frame(maxWidth: .infinity, maxHeight: .infinity)
