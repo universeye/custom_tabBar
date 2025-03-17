@@ -123,7 +123,7 @@ struct CustomTabBar<Content: View>: View {
         let roundedProgress = round(progress)
         let distanceFromInteger = abs(progress - roundedProgress)
         withAnimation(.smooth(duration: 0.4)) {
-            indicatorScale = 0.5
+            indicatorScale = 0.4
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {

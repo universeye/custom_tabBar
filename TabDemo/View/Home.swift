@@ -25,6 +25,7 @@ struct Home: View {
                     item.view
                         .id(item.id)
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
     }
@@ -32,36 +33,36 @@ struct Home: View {
 
 struct FirstView: View {
     var body: some View {
-        Text("First View")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Image(systemName: "macpro.gen1")
+            .font(.system(size: 150, weight: .medium, design: .rounded))
     }
 }
 
 struct SecondView: View {
     var body: some View {
-        Text("Second View")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Image(systemName: "macpro.gen2")
+            .font(.system(size: 150, weight: .medium, design: .rounded))
     }
 }
 
 struct ThirdView: View {
     var body: some View {
-        Text("Third View")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Image(systemName: "macbook")
+            .font(.system(size: 150, weight: .medium, design: .rounded))
     }
 }
 
 struct ForthView: View {
     var body: some View {
-        Text("Forth View")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Image(systemName: "macpro.gen3")
+            .font(.system(size: 150, weight: .medium, design: .rounded))
     }
 }
 
 struct FifthView: View {
     var body: some View {
-        Text("Fifth View")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        Image(systemName: "vision.pro.fill")
+            .font(.system(size: 150, weight: .medium, design: .rounded))
     }
 }
 
